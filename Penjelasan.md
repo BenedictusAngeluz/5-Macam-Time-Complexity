@@ -1,37 +1,41 @@
 # 5 Macam Time Complexity
 
 1. O(1) | Constant Time
-   #include <stdio.h>
+   ```
+   #include <iostream>
    #define a 5
 
-   main()
+   int main() 
    {
-	    int total = 0;
-    	int array[a] = {1, 2, 3, 4, 5};
+       int total = 0;
+       int array[a] = {1, 2, 3, 4, 5};
 	
-	    printf("%d", total);
-    }
-    
+       std::cout << total;
+
+       return 0;
+   }
 2. O(log n) | Logarithmic Time
 
 
 3. O(n) | Linear Time
-   #include <stdio.h>
+   ```
+   #include <iostream>
    #define a 5
 
-   main()
+   int main() 
    {
-	    int total = 0;
-	    int array[a] = {1, 2, 3, 4, 5};
+        int total = 0;
+        int array[a] = {1, 2, 3, 4, 5};
 	
-	    for(int i = 0; i < a; i++)
-	    {
-		      total += array[i];
-	    }
+        for(int i = 0; i < a; i++)
+        {
+             total += array[i];
+        }
 	
-	 printf("%d", total);
+        std::cout << total;
+	
+        return 0;
    }
-  
 4. O(n²) | Quadratic Time
 
 
